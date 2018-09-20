@@ -13,4 +13,10 @@
     <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common.csproj" />
+    <ProjectReference Include="..\..\DeathStar\DeathStar.csproj" />
+    <ProjectReference Include="..\..\MillenniumFalcon\MillenniumFalcon.csproj" />
+  </ItemGroup>
+
 </Project>

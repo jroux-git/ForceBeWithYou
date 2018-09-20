@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MillenniumFalcon", "Millenn
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{FAB3590E-20E8-448D-A7F9-A8A52B3C4116}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "Tests\UnitTests\UnitTests.csproj", "{37298AC4-7D4F-4AA3-9442-A76F692EB278}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests", "Tests\UnitTests\UnitTests.csproj", "{37298AC4-7D4F-4AA3-9442-A76F692EB278}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{FA106217-EDC7-400B-B20A-1011CDD745C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,10 @@ Global
 		{37298AC4-7D4F-4AA3-9442-A76F692EB278}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37298AC4-7D4F-4AA3-9442-A76F692EB278}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37298AC4-7D4F-4AA3-9442-A76F692EB278}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA106217-EDC7-400B-B20A-1011CDD745C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA106217-EDC7-400B-B20A-1011CDD745C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA106217-EDC7-400B-B20A-1011CDD745C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA106217-EDC7-400B-B20A-1011CDD745C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

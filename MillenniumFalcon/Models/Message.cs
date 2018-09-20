@@ -6,8 +6,9 @@ namespace MillenniumFalcon.Models
     /// </summary>
     public class Message
     {
+        #region Properties
         private string _messageText { get; set; }
-        public string Value
+        public string MessageText
         {
             get
             {
@@ -18,10 +19,13 @@ namespace MillenniumFalcon.Models
                 _messageText = value;
             }
         }
+        #endregion
 
+        #region Constructor
         public Message(string messageText)
         {
             _messageText = messageText;
         }
+        #endregion
     }
 }

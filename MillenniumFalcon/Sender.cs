@@ -1,4 +1,6 @@
 ﻿using System;
+using Common;
+using MillenniumFalcon.Interfaces;
 using MillenniumFalcon.Models;
 using RabbitMQ.Client;
 
@@ -8,7 +10,10 @@ namespace MillenniumFalcon
     {
         #region Fields
         private static readonly string _hostName = "localhost";
-        #endregion"localhost"
+        private static readonly string _exchange = "";
+        private static readonly string _routingKey = "queue_vader";
+        private static readonly string _queue = "queue_vader";
+        #endregion
 
         /// <summary>
         /// Entry point to the sender application
@@ -16,8 +21,10 @@ namespace MillenniumFalcon
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            var factory = new ConnectionFactory() { HostName = _hostName };
-            SendHelper sendHelper = new SendHelper(factory);
+            ConnectionProperties connectionProperties = new ConnectionProperties(_hostName, _exchange, _routingKey, _queue);
+            Utils utils = new Utils();
+            IConnectionFactory connectionFactory = utils.CreateConnectionFactory(connectionProperties.HostName);
+            ISendProcessor sendHelper = new SendProcessor(connectionFactory, connectionProperties);
             Message message = UserPrompts();
             sendHelper.SendToQueue(message);
 
