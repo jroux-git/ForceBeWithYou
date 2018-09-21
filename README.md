@@ -7,4 +7,5 @@ There are 2 console applications:
 2. MillenniumFalcon: This is the sender application
 
 Some basic Unit testing was implemented using XUnit
-No Build automation implemented yet.
+
+Build automation was implemented using CodeBuild on AWS.
