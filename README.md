@@ -2,7 +2,7 @@
 RabbitMQ service bus on .Net Core
 Using a plain RabbitMQ implementation within a .Net Core 2.1 application
 
-There are console applications:
+There are 2 console applications:
 1. DeathStar: This is the receiver application
 2. MillenniumFalcon: This is the sender application
 
